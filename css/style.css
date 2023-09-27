@@ -67,8 +67,13 @@ nav a{
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
+  top: -40px;
+  position: absolute;
 }
-
+.skip a:focus{
+  top: 20px;
+  position:  absolute;
+}
 
 nav{
   background-color: #ddd;
@@ -120,18 +125,11 @@ links in the navigation are in the hover or focus state.*/
 
 
 /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
-.skip a{
-top: -40px;
-position: absolute;
 
-}
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
 
-.skip a:focus{
-  top: 20;
-  position:  absolute;
-}
+
 /* Step 3: Write selector/rule property to style all elements when in focus*/
 
 *:focus{
@@ -184,10 +182,6 @@ first div in the grid  and place it in the grid. */
   max-width: 100%;
   overflow: hidden;
  }
-
-
-
-
 
 /* Add your media query here */
 @media only screen and (min-width: 800px){
